@@ -19,9 +19,8 @@ The [uscities.js](./uscities.js) exposes single method: `bindCitySelectors`. It 
 
 In the code below,two sets of the dropdowns are created.
 
-First one set is created with Virginia state, Fairfax county and Annandale city to be selected by default.
-
-Second set is created with nothing pre-selected.
+- First set is created with Virginia state, Fairfax county and Annandale city to be selected by default.
+- Second set is created with nothing pre-selected.
 
 ```HTML
 <div>
