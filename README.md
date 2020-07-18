@@ -4,6 +4,8 @@ This is a small project that let you select a city of United States by selecting
 
 The project is written in plan JavaScript. It does not depend on any framework.
 
+A demo can be found here: https://daxinc.github.io/cascading-city-dropdown/
+
 # Sample usage
 
 The [uscities.js](./uscities.js) exposes single method: `bindCitySelectors`. It accepts 6 parameters in order:
