@@ -1,0 +1,20 @@
+<html>
+  <body>
+    <div>
+      <select id="states"> </select>
+      <select id="counties"></select>
+      <select id="cities"></select>
+    </div>
+    <hr />
+    <div>
+      <select id="states1"> </select>
+      <select id="counties1"></select>
+      <select id="cities1"></select>
+    </div>
+    <script src="uscities.js"></script>
+    <script>
+      bindCitySelectors('states', 'VA', 'counties', 'Fairfax', 'cities', 'Annandale');
+      bindCitySelectors('states1', '', 'counties1', '', 'cities1', '');
+    </script>
+  </body>
+</html>
