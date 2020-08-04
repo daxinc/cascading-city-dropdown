@@ -46,6 +46,9 @@ function bindCitySelectors(stateSelectorId, defaultState, countySelectorId, defa
    * @param {String} selectedValue The value to be automatically selected in the dropdown
    */
   function populateOptions(sel, options, selectedValue) {
+    if (!sel) {
+      return;
+    }
     clearSelectBox(sel);
     addEmptyOption(sel);
     let selectedIndex = 0;
@@ -127,7 +130,7 @@ function bindCitySelectors(stateSelectorId, defaultState, countySelectorId, defa
   function onStateChange() {
     const state = this.stateSelector.options[this.stateSelector.selectedIndex].value;
     const ops = getCountyOptionsByStateId(state);
-    // Populate countie by state
+    // Populate counties by state
     populateOptions(this.countySelector, ops, '');
     // Empty cities
     populateOptions(this.citySelector, null, '');

@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Cascading U.S. state and city dropdowns</title>
+  </head>
+  <body>
+    <h1>Cascading U.S. state and city dropdowns demo</h1>
+    <h2>Demo with default values</h2>
+    <div>
+      <select id="states"> </select>
+      <select id="cities"></select>
+    </div>
+    <h2>Demo without default values</h2>
+    <div>
+      <select id="states1"> </select>
+      <select id="cities1"></select>
+    </div>
+    <script src="state2city.js"></script>
+    <script>
+      bindCitySelectors('states', 'VA', 'cities', 'Abingdon');
+      bindCitySelectors('states1', '', 'cities1', '');
+    </script>
+  </body>
+</html>
