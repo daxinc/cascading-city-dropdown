@@ -46,6 +46,9 @@ function bindCitySelectors(stateSelectorId, defaultState, countySelectorId, defa
    * @param {String} selectedValue The value to be automatically selected in the dropdown
    */
   function populateOptions(sel, options, selectedValue) {
+    if (!sel) {
+      return;
+    }
     clearSelectBox(sel);
     addEmptyOption(sel);
     let selectedIndex = 0;

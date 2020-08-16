@@ -16,10 +16,15 @@
       <select id="counties1"></select>
       <select id="cities1"></select>
     </div>
+    <h2>Demo State only</h2>
+    <div>
+      <select id="states2"> </select>
+    </div>
     <script src="uscities.js"></script>
     <script>
       bindCitySelectors('states', 'VA', 'counties', 'Fairfax', 'cities', 'Annandale');
       bindCitySelectors('states1', '', 'counties1', '', 'cities1', '');
+      bindCitySelectors('states2');
     </script>
   </body>
 </html>
